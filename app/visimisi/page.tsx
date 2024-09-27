@@ -14,7 +14,7 @@ const VisiMisiPage = () => {
       <div className="mb-12 bg-white shadow-lg rounded-lg p-6">
         <h2 className="text-3xl font-semibold mb-4 text-gray-800">Visi</h2>
         <p className="text-gray-600 text-lg leading-relaxed">
-          "Unggul dalam Mutu, Disiplin dalam Belajar, Berbudi Bawa Laksana"
+        &quot;Unggul dalam Mutu, Disiplin dalam Belajar, Berbudi Bawa Laksana&quot;
         </p>
       </div>
 

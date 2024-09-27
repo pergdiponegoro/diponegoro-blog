@@ -9,9 +9,9 @@ export interface GalleryCard{
     currentSlug: string;
 }
 
-export interface GalleryBlog{
+export interface BlogGallery{
     currentSlug: string;
     title: string;
     content: any;
-    image:any;
+    image: any;
 }

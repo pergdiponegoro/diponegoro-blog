@@ -11,6 +11,7 @@ import { NavigationMenuLink } from "@radix-ui/react-navigation-menu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MobileMenu } from "./MobileMenu";
+import Image from "next/image";
 
 export const navigationItems = [
   {
@@ -37,10 +38,12 @@ export function Navbar() {
       <div className="flex items-center">
         <Link href="/">
           {/* Logo */}
-          <img
+          <Image
             src={logoSrc}
             alt="Logo"
             className="h-20 mr-2" // Adjust height and margin as needed
+            width={100} 
+            height={100}
           />
         </Link>
         <Link href="/">
@@ -71,9 +74,7 @@ export function Navbar() {
         </NavigationMenu>
       </div>
 
-      {/* Contact Button and Mobile Menu */}
       <div className="flex items-center">
-        {/* Get In Touch Button as a link */}
         <Link href="#footer">
           <Button className="hidden sm:block bg-primary text-white hover:bg-primary-dark transition duration-300 px-4 py-2 rounded-lg">
             Get In Touch

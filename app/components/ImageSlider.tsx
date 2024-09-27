@@ -3,8 +3,9 @@
 import React, { useRef, useEffect, FC, useState } from 'react';
 import { useKeenSlider } from 'keen-slider/react';
 import { KeenSliderInstance } from 'keen-slider';
-import { urlFor } from '../../lib/sanity';
+import { urlFor } from '../lib/sanity';
 import 'keen-slider/keen-slider.min.css';
+import Image from 'next/image';
 
 interface ImageSliderProps {
   images: { image: any; caption: string }[]; // Updated type to include caption
@@ -106,12 +107,12 @@ const ImageSlider: FC<ImageSliderProps> = ({ images }) => {
             boxShadow: '0 4px 20px rgba(0,0,0,0.2)', // Add shadow for depth
           }}
         >
-          <img
+          <Image
             src={urlFor(imageData.image).url()}
             alt={imageData.caption || `Slide ${idx + 1}`}
+            width={1260}
+            height={600}
             style={{
-              width: '100%',
-              height: '100%',
               objectFit: 'cover',
               transition: 'transform 0.5s ease', // Smooth zoom effect
             }}

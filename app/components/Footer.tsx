@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa"; // Social 
 import Image from "next/image"; // Import for the logo
 
 export function Footer() {
-  const logoSrc = "/images/logo.png"; // Replace with your actual logo path
+  const logoSrc = "/images/logo.png";
 
   return (
     <footer id="footer" className="bg-gray-900 text-gray-200 py-16 w-full"> {/* Increased padding */}

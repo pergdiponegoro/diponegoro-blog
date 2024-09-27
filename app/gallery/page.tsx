@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { GalleryCard } from "@/lib/interface";
-import { client } from "@/lib/sanity";
+import { GalleryCard } from "@/app/lib/interface";
+import { client } from "@/app/lib/sanity";
 import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "../components/Footer";
@@ -90,9 +90,7 @@ export default async function GalleryPage() {
         </Link>
       </div>
       </section>
-
-      {/* Full-width Footer component */}
-      <div className="w-full bg-gray-900"> {/* Ensure background matches your footer */}
+      <div className="w-full bg-gray-900">
         <Footer />
       </div>
     </>

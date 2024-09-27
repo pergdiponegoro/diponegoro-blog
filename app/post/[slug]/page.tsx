@@ -1,6 +1,6 @@
 import { Footer } from "@/app/components/Footer";
-import { BlogGallery } from "@/lib/interface";
-import { client, urlFor } from "@/lib/sanity";
+import { BlogGallery } from "@/app/lib/interface";
+import { client, urlFor } from "@/app/lib/sanity";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 
